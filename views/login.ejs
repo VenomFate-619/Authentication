@@ -1,0 +1,22 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div id="login_content">
+   <h1><i class="fas fa-sign-in-alt"></i> Login</h1>
+   <%- include("./partials/message.ejs") %>
+   <form action="/users/login" method="POST">
+    <label for="name">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter Email" value='<%= field.email!==""? field.email:"" %>' class='<%= validation.indexOf("email")===-1?"":"invalid" %>'>
+    <label for="name">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password"  value='<%= field.password!==""? field.password:"" %>' class='<%= validation.indexOf("password")===-1?"":"invalid" %>'>
+    <button type="submit" id="login">Login</button>
+   </form> 
+   <div id="links">
+   <p>No Account? <a href="/users/register">Register</a></p>
+   <p>Forget Password? <a href="/users/reset">Click here</a></p>
+   </div>
+   </div>
+   <%- include("./partials/script.ejs") %> 
+   <script src="/js/login.js"></script>
+ <%- include("./partials/footer.ejs") %>   

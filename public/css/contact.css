@@ -1,0 +1,59 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#contact_content
+{
+    width:500px;
+    margin:60px auto;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 0px 13px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#contact_content h1
+{
+    text-align: center;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#contact_content input
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid rgb(187, 187, 187);
+}
+#contact_content input::placeholder
+{
+    color: rgb(145, 145, 145);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+#contact_content label
+{
+    transform: translateY(13px);
+    color: rgb(65, 63, 63);
+}
+#contact_content #submit
+{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+}
+#contact_content .invalid
+{
+    border: 1px solid red;
+}
+
+

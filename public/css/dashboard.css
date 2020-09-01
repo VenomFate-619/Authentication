@@ -1,0 +1,36 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#dashboard
+{
+    width:70%;
+    margin:50px auto;
+}
+#dashboard h1
+{
+    color: rgb(75, 54, 54);
+    text-transform: uppercase;
+}
+#dashboard h5
+{
+    text-transform: capitalize;
+    color: rgb(87, 85, 85);
+}
+#dashboard a
+{
+    color: white;
+    background-color: rgb(189, 189, 189);
+    padding:8px;
+    transition: all .2s linear ;
+    display: inline-block;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+#dashboard a:hover
+{
+    text-decoration: none;
+    font-size: 17px;
+}
