@@ -50,7 +50,7 @@ app.use("/",(req,res,next)=>
     res.render("error",{pageTitle:"ERROR"});
 })
 //Server connection
-app.listen(process.env.port,()=>
+app.listen(process.env.PORT,()=>
 {
     console.log("server get started at port 3000");
 })
