@@ -16,7 +16,7 @@ const express=   require("express"),
           collection:"sessions"
       });
 // Data base Connection
- mongoose.connect(process.env.mongo_url,{useNewUrlParser:true,useUnifiedTopology:true},()=>
+ mongoose.connect(process.env.MONGODB_ADDON_URI,{useNewUrlParser:true,useUnifiedTopology:true},()=>
  {
      console.log("mongo db connected");
  });   
