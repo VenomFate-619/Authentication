@@ -21,7 +21,7 @@ const express=   require("express"),
      console.log("mongo db connected");
  });   
 // Automatic HTTPS redirection
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+// app.use(enforce.HTTPS({ trustProtoHeader: true }))
 // use express-session
 app.use(session({
     secret:process.env.secret,
