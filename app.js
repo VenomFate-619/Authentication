@@ -12,7 +12,7 @@ const express=   require("express"),
       session=   require("express-session"),
       mongooseStore=require("connect-mongodb-session")(session),
       store=new mongooseStore({
-          uri:process.env.mongo_url,
+          uri:process.env.MONGODB_ADDON_URI,
           collection:"sessions"
       });
 // Data base Connection
